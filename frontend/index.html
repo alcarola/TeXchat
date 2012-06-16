@@ -24,26 +24,12 @@
     <div class="topbar">
       <div class="fill">
         <div class="container">
-          <a class="brand" href="#">TeXchat</a>
+          <a class="brand">TeXchat</a>
 
           <ul class="nav">
             <li><a id="about">About</a></li>
 
-            <li class="dropdown">
-              <a class="dropdown-toggle">Rooms</a>
-              <ul class="dropdown-menu">
-                <li><a id="new-private-room">New Private Room</a></li>
-                <li class="divider"></li>
-                <li><a id="new-public-room">New Public Room</a></li>
-                <li><a id="list-public-rooms">List Public Rooms</a></li>
-              </ul>
-            </li>
           </ul>
-
-          <form>
-            <input class="input-large span5" type="search"
-              placeholder="Go to Room" id="join" />
-          </form>
 
           <form class="pull-right">
             <label>Username: </label>
@@ -79,9 +65,6 @@
               <div class='span10 input'>
                 <textarea id="send-text" name="send"
                   class="span10" size="30" type="text" /></textarea>
-                <span id="send-help" class="help-inline tex2jax_ignore">
-                  Enter math between $ signs. Like so: $ 1 + 1 $.
-                </span>
               </div>
               <div class='span2'>
                 <input type='button' value="Send" id='send-btn'
@@ -96,25 +79,6 @@
               <li>Connecting...</li>
             </ul>
 
-            <div id="socialmedia">
-              <div id="fb-root"></div>
-              <script>(function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-                fjs.parentNode.insertBefore(js, fjs);
-              }(document, 'script', 'facebook-jssdk'));</script>
-
-            <div class="fb-like" data-href="http://texchat.juanbb.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
-
-            <br /><br />
-
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://texchat.juanbb.com" data-via="juanbenet" data-hashtags="texchat">Tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-            </div>
-
           </div>
         </div>
       </div>
@@ -122,8 +86,6 @@
       <footer>
         <p>
             TeXchat 2012 - by Juan Batiz-Benet
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            Powered by <a href='http://www.mathjax.com'>MathJax</a>
           </span>
         </p>
       </footer>
@@ -136,89 +98,16 @@
         <h3>About TeXchat</h3>
       </div>
       <div class="modal-body">
-        <p>TeXchat is a simple web chat service that renders
-          <a href="http://en.wikipedia.org/wiki/TeX" target="_blank">TeX</a>
-          math.
-
-        <p>The goal is to make it trivially easy to have a conversation with
-someone else in the web, using mathematical symbols.
-"0_j := 0_j - a^3 J(0) d0 - sum(phi_i)" just doesn't cut it, so instead, use
-\( \theta_j := \theta_j - \alpha^3 J (\theta) \partial \theta - \sum \phi_i \)
-
-        <p>Currently, the prettiest math rendering is TeX math, which
-          <a href="http://www.mathjax.org/" target="_blank">MathJax</a>
-          has ellegantly brought to the web. This is coupled with a simple
-          chat service on top of socket.io.
-
-        <p>If you have any suggestions, feedback, issues, etc:
-           please start a topic in the <a
-           href="http://github.com/jbenet/TeXchat/issues"
-           target="_blank">github issues</a>
-           page. Feel free to contact the author directly, but github is
-           preferable.
-
-        <p>TeXchat is built by Juan Batiz-Benet
-
-        <p>&nbsp;
-
-        <div class="row">
-          <div class="span1">&nbsp;</div>
-          <div class="span2">
-            <h4>Powered by</h4>
-            <ul class="unstyled">
-              <li>Frontend:</li>
-              <ul>
-                <li><a href="http://www.mathjax.org/" target="_blank">MathJax</a></li>
-                <li><a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a></li>
-                <li><a href="http://jquery.com/" target="_blank">jQuery</a></li>
-                <li><a href="http://documentcloud.github.com/underscore" target="_blank">Underscore.js</a></li>
-                <li><a href="http://documentcloud.github.com/backbone" target="_blank">Backbone.js</a></li>
-                <li><a href="http://socket.io" target="_blank">Socket.IO</a></li>
-              </ul>
-              <li>Backend:</li>
-              <ul>
-                <li><a href="http://nodejs.org/" target="_blank">node.js</a></li>
-                <li><a href="http://nginx.org/" target="_blank">nginx</a></li>
-              </ul>
-            </ul>
-          </div>
-          <div class="span3">&nbsp;</div>
-          <div class="span2">
-            <h4>Links</h4>
-            <ul class="unstyled">
-              <li>TeXchat:</li>
-              <ul>
-                <li><a href="http://github.com/jbenet/TeXchat" target="_blank">github</a></li>
-                <li><a href="http://github.com/jbenet/TeXchat/issues" target="_blank">issues</a></li>
-                <li><a href="http://github.com/jbenet/TeXchat/wiki" target="_blank">wiki</a></li>
-              </ul>
-              <li>author:</li>
-              <ul>
-                <li><a href="http://twitter.com/juanbenet" target="_blank">@juanbenet</a></li>
-                <li><a href="http://github.com/jbenet" target="_blank">github</a></li>
-
-                <li><a
-href="http://www.google.com/recaptcha/mailhide/d?k=01E-WL9VjjGLTnyBatWs8rjQ==&amp;c=1wBOm0qCzpe5ErWPJ5OvnFIeDERF4-xj2HE-dpfB6Zg="
-onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501E-WL9VjjGLTnyBatWs8rjQ\75\75\46c\0751wBOm0qCzpe5ErWPJ5OvnFIeDERF4-xj2HE-dpfB6Zg\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;"
-title="Reveal this e-mail address" >
-                email</a></li>
-
-              </ul>
-            </ul>
-          </div>
-        </div>
-
+        <p>TeXchat is a simple web chat service that uses <a href='http://www.mathjax.com'>MathJax</a> to render
+          <a href="http://en.wikipedia.org/wiki/TeX" target="_blank">TeX</a> math. 
+	<p>It was built by <a href="https://github.com/jbenet/TeXchat">Juan Batiz-Benet</a> and
+	adapted to Moodle use by <a href="https://github.com/alcarola/TeXchat">Mikael Kurula</a>.
       </div>
       <div class="modal-footer">
         <a href="#" class="btn primary">Close</a>
       </div>
     </div>
 
-
-    <div class="github-ribbon">
-      <a href="http://github.com/jbenet/TeXchat" target="_blank">
-        Fork me on GitHub</a>
-    </div>
 
   </body>
 

@@ -43,14 +43,15 @@ var ChatView = Backbone.View.extend({
       // signal that we've rendered and added this elem (for mathjax, etc)
       Util.rendered(elMsg.children('span.math'));
 
-      // source popover
-      elMsg.popover({
-        title: function() { return 'Message Source'; },
-        content: function() { return message.text; },
-        placement: 'right',
-        trigger: 'hover',
-        stayOnHover: true,
-      });
+// Don't display message source
+//      // source popover
+//      elMsg.popover({
+//        title: function() { return 'Message Source'; },
+//        content: function() { return message.text; },
+//        placement: 'right',
+//        trigger: 'hover',
+//        stayOnHover: true,
+//      });
 
     }
   },
