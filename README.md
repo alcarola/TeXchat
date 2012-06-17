@@ -35,10 +35,14 @@ Feel free to contact me.
 
 ##TODO##
 
-LaTeX source if clicking, should be copiable.
+Make script for daemon.
 
-Make script for daemon
+Use internal mathjax, make configurable.
+
+Show LaTeX source only if clicking, should be copiable.
 
 Make Moodle plugin?
+
+Translate into Swedish
 
 
