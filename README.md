@@ -33,6 +33,12 @@ All dependency libraries are each under their own license.
 Feel free to contact me.
 
 
-[TODO list](TeXchat/TODO.md)
+##TODO##
+
+LaTeX source if clicking, should be copiable.
+
+Make script for daemon
+
+Make Moodle plugin?
 
 
