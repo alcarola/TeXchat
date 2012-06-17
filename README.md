@@ -33,6 +33,6 @@ All dependency libraries are each under their own license.
 Feel free to contact me.
 
 
-[TODO list](./TODO.md)
+[TODO list](TeXchat/TODO.md)
 
 
