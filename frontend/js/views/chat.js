@@ -43,21 +43,22 @@ var ChatView = Backbone.View.extend({
       // signal that we've rendered and added this elem (for mathjax, etc)
       Util.rendered(elMsg.children('span.math'));
 
-// Don't display message source
-//      // source popover
-//      elMsg.popover({
-//        title: function() { return 'Message Source'; },
-//        content: function() { return message.text; },
-//        placement: 'right',
-//        trigger: 'hover',
-//        stayOnHover: true,
-//      });
+// Does not work for the time being...
+      // source popover
+      elMsg.popover({
+        title: function() { return 'Message Source'; },
+        content: function() { return message.text; },
+        placement: 'right',
+        trigger: 'click',
+        stayOnHover: true,
+      });
 
     }
   },
 
+
+// Removed timestamps
   msgTemplate: _.template('<div class="chat-message">\
-      <span class="date"><%- date %></span>\
       <span class="name"><%- name %>:</span>\
       <span class="math"><%- text %></span>\
       <span class="text tex2jax_ignore"><%- text %></span>\

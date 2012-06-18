@@ -53,14 +53,12 @@ var AppView = Backbone.View.extend({
       trigger: 'focus'
     });
 
-// Don't show username pop-over
-
-//    if (!TeXchat.usernameIsUserChosen()) {
-//      // show popover to prompt username change if randomly selected.
-//      setTimeout(_.bind(function() {
-//        $(this.el).find('input#user').popover('show');
-//      }, this), 2000);
-//    }
+    if (!TeXchat.usernameIsUserChosen()) {
+      // show popover to prompt username change if randomly selected.
+      setTimeout(_.bind(function() {
+        $(this.el).find('input#user').popover('show');
+      }, this), 2000);
+    }
 
     // popever explaining the join room field
     $(this.el).find('#join').popover({

@@ -35,14 +35,16 @@ Feel free to contact me.
 
 ##TODO##
 
-Make script for daemon.
+Make TeXchat runnable in an Apache server.
 
-Use internal mathjax, make configurable.
+Make script to start node daemon on server boot.
 
-Show LaTeX source only if clicking, should be copiable.
-
-Make Moodle plugin?
+Use local mathjax installation.
 
 Translate into Swedish
+
+Show LaTeX source if clicked.
+
+Write chatlog to disk.
 
 
