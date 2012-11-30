@@ -33,18 +33,11 @@ All dependency libraries are each under their own license.
 Feel free to contact me.
 
 
-##TODO##
-
-Make TeXchat runnable in an Apache server.
-
-Make script to start node daemon on server boot.
+##Wish list##
 
 Use local mathjax installation.
 
 Translate into Swedish
 
-Show LaTeX source if clicked.
-
 Write chatlog to disk.
-
 
